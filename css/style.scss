@@ -35,8 +35,10 @@ button {
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
+    @include min1300 {
+        width: 100vw;
+        height: 100vh;
+    }
     overflow-x: hidden;
     display: flex;
     background-color: white;
@@ -146,10 +148,12 @@ section {
                 align-items: center;
                 justify-content: space-evenly;
                 padding: 2rem 1rem;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;+
                 img {
                     width: 70%;
                 }
+
+                
 
                 input {
                     height: 2rem;

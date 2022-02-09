@@ -70,11 +70,15 @@ button {
 }
 
 section {
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
   display: flex;
   background-color: white;
+}
+@media screen and (min-width: 1300px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 @media screen and (max-width: 1300px) {
   section {
@@ -186,7 +190,7 @@ section > div:nth-of-type(2) > div form {
   padding: 2rem 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-section > div:nth-of-type(2) > div form img {
+section > div:nth-of-type(2) > div form + img {
   width: 70%;
 }
 section > div:nth-of-type(2) > div form input {
